@@ -1,10 +1,13 @@
-package com.example.demobooking;
+package com.test.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-public class bus {
-    @GetMapping("/myBus")
-    public String getData(){
-        return "Please book tickets for NITA TRAVELLES";
+@RestController
+public class HomeController {
+
+    @RequestMapping("/")
+    public String home(){
+        return "Hello World!";
     }
 }
